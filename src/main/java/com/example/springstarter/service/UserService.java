@@ -19,7 +19,8 @@ public class UserService {
     private final UserWriteUpdateMapper userWriteUpdateMapper;
 
     public Optional<UserReadDto> getById(Long id) {
-        return userRepository.findById(id).map(userReadMapper::map);
+        return userRepository.findById(id)
+                .map(userReadMapper::map);
 
     }
 
