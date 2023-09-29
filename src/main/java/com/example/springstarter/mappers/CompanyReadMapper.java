@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 public class CompanyReadMapper implements Mapper<Company, CompanyReadDto> {
     @Override
     public CompanyReadDto map(Company from) {
-        return new CompanyReadDto(from.getName());
+        return new CompanyReadDto(from.getCompanyName());
     }
 }

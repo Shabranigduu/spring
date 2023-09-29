@@ -10,13 +10,13 @@ public class CompanyWriteUpdateMapper implements Mapper<CompanyWriteUpdateDto, C
     @Override
     public Company map(CompanyWriteUpdateDto from) {
         return Company.builder()
-                .name(from.getName())
+                .companyName(from.getCompanyName())
                 .build();
     }
 
     @Override
     public Company map(CompanyWriteUpdateDto from, Company toObject) {
-        toObject.setName(from.getName());
+        toObject.setCompanyName(from.getCompanyName());
         return toObject;
     }
 }

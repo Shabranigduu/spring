@@ -4,5 +4,5 @@ import lombok.Value;
 
 @Value
 public class CompanyReadDto {
-    String name;
+    String companyName;
 }

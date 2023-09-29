@@ -21,7 +21,7 @@ public class Company {
     private Integer id;
 
 
-    private String name;
+    private String companyName;
 
     @OneToMany(mappedBy = "company", fetch = FetchType.LAZY)
     private List<User> users;
